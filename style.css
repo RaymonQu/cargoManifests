@@ -1,0 +1,64 @@
+body{
+    background-color: lightblue;
+    font-size: 20pt;
+    text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40pt;
+}
+
+h2{
+    font-size: 20pt;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+}
+
+.boxes >*{
+    margin: 20px;
+    height: 50px;
+    width: 220px;
+}
+
+.logs{
+    display: inline-flex;
+}
+
+.logs > div{
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+    overflow-y: scroll;
+    border: thick solid black;
+}
+
+img{
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+#imgShow{
+    display: flex;
+    justify-content: center;
+}
+
+#imgShow > img{
+    display: none;
+}
+
+#container>*{
+    text-align: left;
+}
+#container>p{
+    margin-left: 50px;
+}
+
+.log > div > p{
+    margin: 0px;
+}

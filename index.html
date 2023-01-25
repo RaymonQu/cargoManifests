@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html onclick = "react(event)" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body onload="initialize()">
+    <h1> Full of Ship Importing and Exporting Cargo Manifests</h1>
+    <h2>You are working the unfortunate job of an Export Worker. Your job is to fit all items into the boxes and ship them out. <br>
+        Do this by clicking on the item in the log once you click the size of box. Make sure that every item can fit in the box size.</h2>
+    <p id="manifestCounter">Manifests left: </p>
+    <p id="hiddenMessage"></p>
+    <div class="logs">
+        <div id="manItems">Manifest Items:</div>
+        <div id="boxItems">Items in the Box:</div>
+    </div>
+    <div class="boxes">
+        <button onclick="openBox(0)">Open Small Box</button>
+        <button onclick="openBox(1)">Open Medium Box</button>
+        <button onclick="openBox(2)">Open Large Box</button>
+        <button onclick="closeBox()">Close Box</button>
+    </div>
+    <div id="imgShow">
+        <img src="" alt="notyet">
+    </div>
+    <div id="container">
+        <p>Legend</p>
+        <ul>
+            <li>Nokia: 1 size</li>
+            <li>Biden: 8 size</li>
+            <li>laptop: 3 size</li>
+            <li>Bat: 4 size</li>
+            <li>TV: 7 size</li>
+            <li>Chainsaw: 6 size</li>
+            <li>Lamp: 2 size</li>
+        </ul>
+    </div>
+</body>
+</html>
